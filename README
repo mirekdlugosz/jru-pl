@@ -1,0 +1,25 @@
+Jabber roster utility
+=====================================
+http://jru.jabberstudio.org
+
+Installation
+------------
+
+Make sure you have the necessary Perl modules installed (Net::Jabber and
+its requirements). You can get them via CPAN ("perl -MCPAN -e shell", 
+"install Net::Jabber").
+
+Then just copy the files included to a directory on your web server that 
+has ExecCGI rights. Modify config.pl as needed.
+
+It is strongly recommended to provide SSL secured access to the utility's
+web pages (https) for the user's Jabber password will be transmitted in
+clear text over the wire if using normal http.
+
+Todo
+----
+
+- code clean up
+- get all imports working again (send in sample contact lists please)
+
+Good luck!

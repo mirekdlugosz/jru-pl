@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Jabber roster utility -- HowTo</title>
+</head>
+
+<body bgcolor="#ffffff" text="#003366" link="#000000">
+
+<div class="main" align="center"><br /><br />
+
+<table bgcolor="#003366" width="80%" cellpadding="2" cellspacing="2" border="0">
+<tr>
+<td bgcolor="#99ccff" width="100%">
+
+<div align="center">
+<h2>Jabber roster utility HowTo</h2>
+
+<hr width="75%" noshade="noshade" />
+<a name="import"><h3>How to import ICQ/AIM contact lists</h3></a>
+</div>
+
+<ol>
+<li>Launch you favourite Jabber client</li>
+<li>Register with the transport of choice - remember its name (for example <i>aim.some.jabber.server</i>)<br /><b>Important</b>: This has to be done <i>before</i> importing your contacts in step 5</li>
+<li>Fill out the roster utility's "Convert buddy list to roster changes" form fields, click "Convert file"</li>
+<li>Once the file has been converted check the resulting "Roster changes" and modify if necessary</li>
+<li>Fill out the roster utility's "Server information" form field, click "Send roster changes to Jabber server"</li>
+</ol>
+
+<div align="center">
+<a name="migrates"><h3>How to migrate from one Jabber server to another</h3></a>
+</div>
+
+<ol>
+<li>Launch you favourite Jabber client</li>
+<li>Register a new account on the destination Jabber server</li>
+<li>Fill out the roster utility's "Server information" form field (with your <i>old</i> account's authorization information), click "Get roster from Jabber server"</li>
+<li>Check out the resulting roster changes</li>
+<li>Fill out the roster utility's "Server information" form field (with your <i>new</i> account's authorization information), click "Send roster changes to Jabber server"</li>
+</ol>
+
+<div align="center">
+<a name="migratet"><h3>How to migrate contacts from one transport to another</h3></a>
+</div>
+
+Perhaps you find the transport(s) you are currently using too unstable or unreliable. Perhaps you want to use the new ICQv7-t for your ICQ contacts instead of AIM-t. Just migrate your contacts: With Jabber you have full flexibility, you can even use transports set up on servers you do not habe a Jabber account on.
+
+<ol>
+<li>Launch you favourite Jabber client</li>
+<li>Unregister with the current transport, register with the new transport - remember its name (for example <i>aim.some.jabber.server</i>)<br /><b>Important</b>: This has to be done <i>before</i> importing your contacts in step 9</li>
+<li>Fill out the roster utility's "Server information" form field, click "Get roster from Jabber server"</li>
+<li>Copy the resulting roster changes to your favourite text editor, delete all contacts that do not have to be changed</li>
+<li>Duplicate the remaining contacts and replace all leading "+" by "-" on the <i>original</i> contacts</li>
+<li>Replace the old transport's address with the new transport's address on the remaining contacts (the ones starting with "+")</li>
+<li>Now you have one block of contacts with a leading "-" (this means all contacts using the old transports are going to be deleted from your roster) and a block with a leading "+" (the contacts using the new transport)</li>
+<li>Copy the text back to the roster changes form field</li>
+<li>Fill out the roster utility's "Server information" form field, click "Send roster changes to Jabber server"</li>
+</ol>
+
+</td></tr></table>
+</div>
+
+</body>
+</html>

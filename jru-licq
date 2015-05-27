@@ -1,0 +1,16 @@
+# to run this script: "perl jru-licq ~/.licq/users/*.uin"
+
+$transport = 'icq.some.jabber.server';
+
+do {
+  $filename = pop(@ARGV);
+
+  $list = '';
+  open (LIST, "$filename");
+  while(<LIST>) { $list .= $_; }
+  close LIST;
+
+  $filename =~ s/\.uin//;
+  $list =~ /^Alias = (.*)/m;
+  printf("+,%s\@%s,%s\n",$filename,$transport,$1);
+} while ($#ARGV > 0);

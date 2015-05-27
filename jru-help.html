@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Jabber roster utility -- Help</title>
+</head>
+
+<body bgcolor="#ffffff" text="#003366" link="#000000">
+
+<div class="main" align="center"><br /><br />
+
+<table bgcolor="#003366" width="80%" cellpadding="2" cellspacing="2" border="0">
+<tr>
+<td bgcolor="#99ccff" width="100%">
+
+<div align="center">
+<h2>Jabber roster utility help</h2>
+<hr width="75%" noshade="noshade" /><h3>Form Fields</h3>
+</div>
+
+<blockquote><b>Username</b> - this is the name that you signed up to a Jabber server with.  If your full Jabber ID is FunkyMan7@jabber.com, your username is FunkyMan7.<br /><br />
+<b>Password</b> - this is simply your password - the combination of characters that gives only you access to your Jabber account.<br /><br />
+<b>Server</b> - this is the jabber.com portion of your FunkyMan7@jabber.com Jabber ID.<br /><br />
+<b>Port</b> - this should generally be left at 5222, unless you know differently <i>for sure</i>.<br /><br />
+<b>Transport Address</b> - the transport or agent is a part of the Jabber server that translates Jabber messages into those to other messaging systems, like AIM or ICQ, and vice versa.  The transport address tells the Importer which transport you are registered with so you can subscribe to and contact the users that are being imported.  You must be registered with a transport to see the contacts you are importing; each Jabber client does it differently.  Generally, enter aim.<your jabber server> or icq.<your jabber server> as the transport addresses for AIM and ICQ, respectively.  For instance, if you are registered on jabber.com, your AIM transport address is probably aim.jabber.com.<br /><br />
+<b>Type of buddy list or configuration file</b> - this tells the Importer which program that you are trying to import contacts from.  This is necessary because of the different formats different programs store their configurations in.<br /><br />
+<b>The empty field and "Browse" button</b> - Click "Browse" to select the file that contains the contacts list or configuration file that goes with the program you are importing from.  For more info on which files go with which programs, see below.<br /><br />
+</blockquote>
+
+<div align="center"><a name="list_types"></a><h3>IM programs and their files</h3></div><blockquote>
+<b>AOL Instant Messenger</b> - AOL's official client for Windows and for Linux.  To obtain these list files, you must sign into your account using the program, and select from the "File" menu to "Export" or "Save" your buddy list.  Save these settings and use the file that you obtained from this procedure; they usually end with ".blt" .<br /><br />
+<b>Gaim</b> - Similar to AOL's official clients, you must choose "File" and "Export" your buddy list.  These files usually end in ".buddy"; use the exported file as the one to upload.<br /><br />
+<b>GnomeICU</b> - You do not need to do anything to export files from GnomeICU.  The configuration file necessary is located usually in <your home directory>/.gnome/ directory and is called GnomeICU.<br /><br />
+<b>mICQ</b> - Similar to GnomeICU, the configuration file necessary is generally located in your home directory and is called .micqrc -- upload this file.<br /><br />
+<b>ICQ99b - ICQ 2000b</b> - These files are saved in a subdirectory called something like "Db99" of the directory you installed ICQ in.  Inside this directory, the file named <your uin>.dat is the one that you should upload.  (For instance, if your UIN is 988633, the file is 988633.dat)  Be patient; these files are generally large in size.<br /><br />
+<b>ICQ2001/2002</b> - These files are saved in a subdirectory called "Contact List" of the directory you installed ICQ in.  Inside this directory, choose a recent .clb file to upload.<br /><br />
+<a name="licq"><b>Licq</b></a> - Use <a href="jru-licq">this</a> small Perl script and copy the resulting list directly to the roster changes text field.<br /><br />
+</blockquote>
+
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
